@@ -36,7 +36,7 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <!--Geral - todas as responsividades-->
+              <!--Geral e Conteúdo para celular-->
               <img class="d-none d-lg-block logo" src="../img/logo_babadogs.svg" alt="Babadog's"/>
               <a class="d-lg-none" href="#"><img src="../img/Babadogs.svg" alt="Babadog's"></a>
               <span class="user custom-icon-right d-lg-none"><i class="fa fa-user" aria-hidden="true"></i></i></span>
@@ -60,14 +60,22 @@
           <!-- Menu Celular (Offcanvas) -->
           <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
             <div class="offcanvas-header">
-              <img class="logoTexto" src="../img/logo_babadogs_2.svg" alt="Babadog's"/>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <img class="logoTexto d-flex" src="../img/logo_babadogs_2.svg" alt="Babadog's"/>
+              <button type="buttom" class="btn-close fechar d-flex" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
               <ul class="list-unstyled">
-                <li><a class="dropdown-item" href="#">Ação 1</a></li>
-                <li><a class="dropdown-item" href="#">Ação 2</a></li>
-                <li><a class="dropdown-item" href="#">Ação 3</a></li>
+                <li class="d-flex"><img src="../img/Home.svg"/><a class="dropdown-item" href="#">Início</a></li>
+                <hr/>
+                <li class="d-flex"><img src="../img/Bolsa.svg"/><a class="dropdown-item" href="#">Serviços</a></li>
+                <hr/>
+                <li class="d-flex"><img src="../img/Serviço.svg"/><a class="dropdown-item" href="#">Agendar serviços</a></li>
+                <hr/>
+                <li class="d-flex"><img src="../img/Carrinho.svg"/><a class="dropdown-item" href="#">Carrinho de compras</a></li>
+                <hr/>
+                <li class="d-flex"><img src="../img/Chat.svg"/><a class="dropdown-item" href="#">Chat</a></li>
+                <hr/>
+                <!--<li class="d-flex"><img src="../img/right-from-bracket-solid.svg"/><a class="dropdown-item" href="#">Sair</a></li>-->
               </ul>
             </div>
           </div>

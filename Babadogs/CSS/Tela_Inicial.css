@@ -35,6 +35,26 @@ span {
     width: 60%;
   }
 
+  .offcanvas-header {
+    display: flex;
+    justify-content: center; 
+    position: relative; 
+  }
+  
+  .logoTexto {
+    width: 180px;
+  }
+  
+  .btn-close.fechar {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+  
+  .offcanvas-body, .offcanvas-start {
+    background-color: #F0F2FF;
+  }
+  
   /*Escurecer o fundo*/
   .offcanvas-backdrop.show {
     background-color: rgba(0, 0, 0, 0.5);
@@ -62,6 +82,20 @@ span {
     box-shadow: none;
 }
 
+.dropdown-item {
+  margin-left: 20px;
+  align-items: center;
+}
+
+.list-unstyled li img {
+  cursor: pointer;
+}
+
+.list-unstyled li:hover {
+  background-color: white;
+  border-radius: 10px 10px;
+  padding: 10px;
+}
 
 
 /* ===== Menu Celular ===== */
