@@ -37,31 +37,30 @@
             <div class="container-fluid">
               <!-- Botão sanduíche (visível em telas pequenas) -->
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="d-md-none navbar-toggler-icon"></span>
               </button>
               <!--Geral e Conteúdo para celular-->
-              <!--Logo e ícone menu-->
-              <img class="d-none d-lg-block logo" src="../img/logo_babadogs.svg" alt="Babadog's"/>
-              <a class="d-lg-none" href="#"><img src="../img/Babadogs.svg" alt="Babadog's"></a>
+              <!--Logo-->
+              <a class="d-md-none logo-escrita" href="#"><img src="../img/Babadogs.svg" alt="Babadog's"></a>
               <!--Login/Cadastro-->
-              <span class="user custom-icon-right d-lg-none"><i class="fa fa-user" aria-hidden="true"></i></i></span>
-              <span class="sign custom-icon-left d-lg-none"><i class="fa fa-sign-in" aria-hidden="true"></i></i></span>
+              <span class="user custom-icon-right d-sm-inline d-md-none"><i class="fa fa-user" aria-hidden="true"></i></span>
+              <span class="sign custom-icon-left d-sm-inline d-md-none"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
               <!--Barra de pesquisa-->
-              <form class="d-lg-none d-flex flex-column w-100 mt-2" role="search">
+              <form class="d-md-none d-flex flex-column w-100 mt-2" role="search">
                 <input class="form-control" type="search" placeholder="Search" aria-label="Search">
               </form>
 
       
               <!-- Conteúdo para PC -->
-              <div class="d-none d-lg-flex w-100 justify-content-between align-items-center">
+              <div class="d-flex w-100 justify-content-between align-items-center">
                 <!--Logo-->
-                <a class="navbar-brand" href="#"><img src="../img/Babadogs.svg" alt="Babadog's"></a>
+                <img class="d-none d-md-flex logo" src="../img/logo_babadogs.svg" alt="Babadog's"/>
+                <a class="d-none d-md-flex navbar-brand logo-escrita" href="#"><img src="../img/Babadogs.svg" alt="Babadog's"></a>
                 <!--Barra de pesquisa-->
-                <form class="d-flex flex-grow-1 mx-3" role="search">
+                <form class="d-none d-md-flex flex-grow-1 mx-3" role="search">
                     <input class="form-control w-100" type="search" placeholder="Search" aria-label="Search">
                 </form>
-                <div class="d-flex gap-2 align-items-center">
-                  <!--Login/Cadastro-->
+                <div class="d-none d-md-flex gap-2 align-items-center">
                   <button class="btn login" type="submit">Login</button>
                   <button class="btn cadastro" type="submit">Cadastro</button>
                 </div>
@@ -97,10 +96,27 @@
         <main>
           <section>
             <!-- Conteúdo para Celular -->
-            <div class="propaganda d-lg-none">
-              <img class="w-100 fundo-patinhas" src="../img/Fundo patinhas.svg"/>
+            <!--Propaganda-->
+            <div class="propaganda d-md-none">
+              <img class="w-100 img-fluid fundo-patinhas" src="../img/Fundo patinhas.svg"/>
               <p class="texto1">Dê aos seus pets a atenção e os mimos que merecem!</p>
               <p class="texto2">Descubra o melhor em serviços especializados para animais.</p>
+              <button class="btn saibaMais" type="button">Saiba mais <b>></b></button>
+            </div>
+            <!--Propaganda-->
+            <div class="serviços container-fluid d-md-none d-flex">
+              <img class="img-fluid" src="../img/Pata_azul.svg"/>
+              <h1>Serviços oferecidos</h1>
+            </div>
+            <div class="d-flex d-md-none">
+              <a class="btn btn-serviços" href="#">
+                <img src="../img/osso.svg" alt="Cuidados à higiene" />
+                <p>Cuidados à higiene</p>
+              </a>
+              <a class="btn btn-serviços" href="#">
+                <img class="pote" src="../img/ração.svg" alt="Alimentação diária" />
+                <p>Alimentação diária</p>
+              </a>
             </div>
           </section>
         </main>
