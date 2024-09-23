@@ -22,8 +22,20 @@ h6,
 label,
 select,
 span {
-  font-family: 'Inter', sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
   color: #373737;
+}
+
+/*tirar cor de focus do input*/
+input:focus:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/*tirar cor de focus do botão*/
+button:focus:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 /* ------------ NAVBAR ------------ */
@@ -76,68 +88,94 @@ span {
     height: 2em;
   }
 
-  /*tirar cor de focus do botão de menu*/
-  button:focus:focus {
-    outline: none;
-    box-shadow: none;
-}
 
-.dropdown-item {
-  margin-left: 20px;
-  align-items: center;
-}
+  .dropdown-item {
+    margin-left: 20px;
+    align-items: center;
+  }
 
-.list-unstyled li img {
-  cursor: pointer;
-}
+  .list-unstyled li img {
+    cursor: pointer;
+  }
 
-.list-unstyled li:hover {
-  background-color: white;
-  border-radius: 10px 10px;
-  padding: 10px;
-}
+  .list-unstyled li {
+    padding: 5px;
+  }
+
+  .list-unstyled li:hover {
+    background-color: white;
+    border-radius: 10px 10px;
+  }
 
 
 /* ===== Menu Celular ===== */
 
-.user, .sign {
-  font-size: 30px;
-  cursor: pointer;
+  .user, .sign {
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .sign {
+    margin-right: 20px;
+  }
+
+  .user:hover, .sign:hover {
+    color: #42B3C8;
+    transition: 0.3s ease-in-out; 
+  }
+
+  /* ===== Menu PC ===== */
+
+  .logo {
+    width: 130px;
+  }
+
+  .login {
+    margin-left: 20px;
+  }
+
+  .cadastro {
+    margin-right: 20px;
+  }
+
+  .login, .cadastro {
+    background-color: white;
+    border: 2px solid #42B3C8;
+    color: #373737;
+  }
+
+  .login:hover, .cadastro:hover {
+    background-color: #42B3C8;
+    border: 2px solid #42B3C8;
+    color: white;
+  }
+
+
+
+/* ------------ MAIN ------------ */
+
+/* ===== Propaganda ===== */
+
+.propaganda {
+  position: relative;
 }
 
-.sign {
-  margin-right: 20px;
+.texto1, .texto2 {
+  position: absolute;
+  text-align: justify;
 }
 
-.user:hover, .sign:hover {
-  color: #42B3C8;
-  transition: 0.3s ease-in-out; 
+.texto1 {
+  top: 19%;
+  font-size: 27px;
+  padding: 0px 20px 0px 20px;
+  font-weight: 600;
 }
 
-/* ===== Menu PC ===== */
-
-.logo {
-  width: 130px;
-}
-
-.login {
-  margin-left: 20px;
-}
-
-.cadastro {
-  margin-right: 20px;
-}
-
-.login, .cadastro {
-  background-color: white;
-  border: 2px solid #42B3C8;
-  color: #373737;
-}
-
-.login:hover, .cadastro:hover {
-  background-color: #42B3C8;
-  border: 2px solid #42B3C8;
-  color: white;
+.texto2 {
+  top: 49%;
+  font-size: 15px;
+  padding: 0px 20px 0px 20px;
 }
 
 /* ------------ RESPONSIVIDADE ------------ */
@@ -145,5 +183,11 @@ span {
 @media (max-width: 991px) {
   body {
     margin-top: 2%;
+  }
+}
+
+@media (min-width: 550px) {
+  .fundo-patinhas {
+    
   }
 }

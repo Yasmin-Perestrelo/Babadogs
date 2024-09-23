@@ -19,7 +19,10 @@
     <!--Caminho para o CSS Tela Inicial-->
     <link rel="stylesheet" type="text/css" href="../css/Tela_Inicial.css">
 
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 
     <title>Babadog's | Produtos & Serviços</title>
 
@@ -37,19 +40,28 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <!--Geral e Conteúdo para celular-->
+              <!--Logo e ícone menu-->
               <img class="d-none d-lg-block logo" src="../img/logo_babadogs.svg" alt="Babadog's"/>
               <a class="d-lg-none" href="#"><img src="../img/Babadogs.svg" alt="Babadog's"></a>
+              <!--Login/Cadastro-->
               <span class="user custom-icon-right d-lg-none"><i class="fa fa-user" aria-hidden="true"></i></i></span>
               <span class="sign custom-icon-left d-lg-none"><i class="fa fa-sign-in" aria-hidden="true"></i></i></span>
+              <!--Barra de pesquisa-->
+              <form class="d-lg-none d-flex flex-column w-100 mt-2" role="search">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              </form>
 
       
               <!-- Conteúdo para PC -->
               <div class="d-none d-lg-flex w-100 justify-content-between align-items-center">
+                <!--Logo-->
                 <a class="navbar-brand" href="#"><img src="../img/Babadogs.svg" alt="Babadog's"></a>
+                <!--Barra de pesquisa-->
                 <form class="d-flex flex-grow-1 mx-3" role="search">
                     <input class="form-control w-100" type="search" placeholder="Search" aria-label="Search">
                 </form>
                 <div class="d-flex gap-2 align-items-center">
+                  <!--Login/Cadastro-->
                   <button class="btn login" type="submit">Login</button>
                   <button class="btn cadastro" type="submit">Cadastro</button>
                 </div>
@@ -82,9 +94,15 @@
         </section>
       </header>
       
-
         <main>
-
+          <section>
+            <!-- Conteúdo para Celular -->
+            <div class="propaganda d-lg-none">
+              <img class="w-100 fundo-patinhas" src="../img/Fundo patinhas.svg"/>
+              <p class="texto1">Dê aos seus pets a atenção e os mimos que merecem!</p>
+              <p class="texto2">Descubra o melhor em serviços especializados para animais.</p>
+            </div>
+          </section>
         </main>
 
         <footer>
