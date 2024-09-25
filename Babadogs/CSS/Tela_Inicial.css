@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: sans-serif;
     outline: none;
     list-style: none;
   }
@@ -28,6 +27,10 @@ select,
 span {
   font-family: "Be Vietnam Pro", sans-serif;
   color: #373737;
+}
+
+input {
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
 /*tirar cor de focus do input*/
@@ -97,18 +100,26 @@ button:focus:focus {
     align-items: center;
   }
 
-  .list-unstyled li img {
+  .list-unstyled li {
+    padding: 5px;
     cursor: pointer;
   }
 
-  .list-unstyled li {
-    padding: 5px;
+  .list-unstyled li:hover svg path {
+    fill: #5961B4;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .list-unstyled li:hover a {
+    color: #5961B4;
+    transition: 0.3s ease-in-out;
   }
 
-  .list-unstyled li:hover {
-    background-color: white;
-    border-radius: 10px 10px;
-    transition: 0.3s ease-in-out; 
+  .sair {
+    width: 25px;
+    height: 25px;
+    color: #5b5b5e;
   }
 
 
@@ -192,6 +203,7 @@ button:focus:focus {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .saibaMais:hover {
@@ -201,11 +213,8 @@ button:focus:focus {
   transition: 0.3s ease-in-out; 
 }
 
-/* ===== Serviços ===== */
 
-.serviços {
-  margin-left: 15px;
-}
+/* ===== Serviços ===== */
 
 .serviços img {
   width: 30%; 
@@ -276,6 +285,51 @@ button:focus:focus {
 
 .btn-serviços:hover p {
   color: white!important; 
+}
+
+
+/* ===== Profissionais ===== */
+
+.profissionais {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15% 5% 0% 5%;
+}
+
+.card {
+  position: relative;
+  overflow: visible; 
+  border-radius: 20px;
+}
+
+.card-img-top {
+  position: relative;
+  top: -50px; 
+  z-index: 1;
+}
+.card a {
+  background-color: #373737;
+  border-radius: 20px;
+}
+
+.card-body h5 {
+  margin-top: -20%;
+  background-color: #373737;
+  color: white;
+}
+
+.card-body p {
+  margin-bottom: 10%;
+  color: white;
+}
+
+hr {
+  color: white;
+}
+
+.classificação_patinhas {
+  padding-top: 20%;
 }
 
 /* ------------ RESPONSIVIDADE ------------ */
