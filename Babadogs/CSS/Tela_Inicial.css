@@ -27,6 +27,7 @@ select,
 span {
   font-family: "Be Vietnam Pro", sans-serif;
   color: #373737;
+  text-decoration: none;
 }
 
 input {
@@ -294,19 +295,27 @@ button:focus:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 15% 5% 0% 5%;
+  padding: 23% 5% 0% 5%;
 }
 
 .card {
   position: relative;
   overflow: visible; 
   border-radius: 20px;
+  margin-bottom: 30%;
 }
 
-.card-img-top {
+.imagem_profissional {
+  background-color: #5961B4;
   position: relative;
   top: -50px; 
-  z-index: 1;
+  border-radius: 20px 20px 0px 0px;
+  height: 248px !important;
+}
+
+.imagem_profissional .card-img-top {
+  position: relative;
+  top: -50px; 
 }
 .card a {
   background-color: #373737;
@@ -328,9 +337,7 @@ hr {
   color: white;
 }
 
-.classificação_patinhas {
-  padding-top: 20%;
-}
+
 
 /* ------------ RESPONSIVIDADE ------------ */
 
