@@ -1,16 +1,12 @@
 /*Resetando os valores padrões da página*/
 * {
-    margin: 0, 0, 0, 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     outline: none;
     list-style: none;
   }
-
-html {
-  margin: 0, 2vw, 0, 2vw;
-}
 
 /*geral para todos os links, parágrafos, títulos, label e select*/
 li,
@@ -104,6 +100,11 @@ button:focus:focus {
   .list-unstyled li {
     padding: 5px;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+
+  .list-unstyled li svg path{
+    transition: 0.3s ease-in-out;
   }
 
   .list-unstyled li:hover svg path {
@@ -129,6 +130,7 @@ button:focus:focus {
   .user, .sign {
     font-size: 30px;
     cursor: pointer;
+    transition: 0.3s ease-in-out; 
   }
 
   .sign {
@@ -297,10 +299,6 @@ button:focus:focus {
   justify-items: center;
 }
 
-.card-body {
-  width: 18rem!important;
-}
-
 .carousel {
   padding: 0px 50px 50px 50px!important;
 }
@@ -309,44 +307,34 @@ button:focus:focus {
   position: relative;
   border-radius: 20px;
   width: 18rem!important;
-  margin-top: 30%;
+  margin-top: 20%;
+  transition: 0.3s ease-in-out;
 }
 
 .imagem_profissional {
-  background-color: #5961B4; 
   position: relative;
   top: -50px; 
-  border-radius: 20px 20px 0px 0px;
-  height: 248px; 
-  overflow: visible; 
-}
-
-.img-container {
-  height: 136.5%; 
-  position: relative;
-  top: -56.5px; 
-  display: flex;
-  justify-content: center; 
-  align-items: flex-start; 
+  border-radius: 20px 20px 0px 0px; 
+  height: 290px; 
   overflow: hidden; 
 }
 
-.img-container img {
+.imagem_profissional img {
   width: 100%; 
-  height: 90%;
-  position: relative; 
-  top: 0; 
-}
-
-
-.imagem_profissional .card-img-top {
-  position: relative;
-  top: -50.9px;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 20px 20px 0px 0px;
 }
 
 .card a {
   background-color: #373737;
   border-radius: 20px;
+}
+
+.card:hover {
+  transform: scale(1.05) translateY(-5px); /* Aumenta o tamanho e levanta o card */
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .card-body h5 {
@@ -360,13 +348,101 @@ button:focus:focus {
   color: white;
 }
 
-hr {
+.card hr {
   color: white;
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon, .carousel-indicators {
   filter: invert(48%) sepia(74%) saturate(3693%) hue-rotate(157deg) brightness(95%) contrast(99%);
 }
+
+
+/* ------------ RODAPÉ ------------ */
+
+/* ===== Celular===== */
+
+.rodape {
+  background-color: #F0F2FF;
+  width: 100%;
+  padding: 6% 4% 0% 4%;
+  display: flex;
+  flex-direction: column;
+}
+
+.rodape p {
+  font-size: 2vw;
+}
+
+.conteudoFooter {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  margin-bottom: 15px; 
+}
+
+.conteudoFooter img {
+  width: 10%; 
+  height: auto; 
+}
+
+.conteudoFooter .dropdown-item {
+  margin-left: 10px; 
+  font-size: 3vw;
+}
+
+.redesSociais {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.redesSociais img {
+  margin-left: 2%;
+}
+
+.rodape {
+  position: relative; 
+  width: 100%; 
+  height: 100%; 
+  background-color: #F0F2FF; 
+}
+
+.img-top-right {
+  position: absolute; 
+  top: 16px; 
+  right: 16px; 
+  width: 7%; 
+  height: auto; 
+  max-width: 100px; 
+}
+
+.img-bottom-left {
+  position: absolute; 
+  bottom: 17%; 
+  left: 4%; 
+  width: 7%; 
+  height: auto; 
+  max-width: 100px;
+}
+
+.bolinha {
+  position: absolute;
+  border-radius: 50%; /* Faz o elemento ser redondo */
+  background-color: white; /* Cor da bolinha */
+  width: 20px; /* Largura da bolinha */
+  height: 20px; /* Altura da bolinha */
+}
+
+/* Crie várias bolinhas em diferentes posições */
+.bolinha1 { top: -3%; left: 3%; }
+.bolinha2 { top: -3%; left: 13%; }
+.bolinha3 { top: -3%; left: 23%; }
+.bolinha4 { top: -3%; left: 33%; }
+.bolinha5 { top: -3%; left: 43%; }
+.bolinha6 { top: -3%; left: 53%; }
+.bolinha7 { top: -3%; left: 63%; }
+.bolinha8 { top: -3%; left: 73%; }
+.bolinha9 { top: -3%; left: 83%; }
+.bolinha10 { top: -3%; left: 93%; }
 
 
 
