@@ -143,33 +143,88 @@ button:focus:focus {
   }
 
   /* ===== Menu PC ===== */
+.menuPC {
+  padding: 1% 2% 0% 2%;
+}
 
-  .logo {
-    width: 130px;
-  }
+.logo {
+  width: 130px;
+}
 
-  .login {
-    margin-left: 20px;
-  }
+.login {
+  margin-left: 20px;
+}
 
-  .cadastro {
-    margin-right: 20px;
-  }
+.cadastro {
+  margin-right: 20px;
+}
 
-  .login, .cadastro {
-    background-color: white;
-    border: 2px solid #42B3C8;
-    color: #373737;
-  }
+.login, .cadastro {
+  background-color: white;
+  border: 2px solid #42B3C8;
+  color: #373737;
+}
 
-  .login:hover, .cadastro:hover {
-    background-color: #42B3C8;
-    border: 2px solid #42B3C8;
-    color: white;
-    transition: 0.3s ease-in-out; 
-  }
+.login:hover, .cadastro:hover {
+  background-color: #42B3C8;
+  border: 2px solid #42B3C8;
+  color: white;
+  transition: 0.3s ease-in-out; 
+}
 
 /* ------------ MAIN ------------ */
+
+/* ===== Propaganda PC===== */
+
+.texto1-PC, .texto2-PC {
+  position: absolute;
+  padding: 0% 5% 0% 5%;
+  width: 60%;
+}
+
+.texto1-PC {
+  top: 20%; 
+  font-size: 2.5vw; 
+  font-weight: 600;
+  color: #7b6b80;
+}
+
+.texto2-PC {
+  top: 45%;
+  font-size: 1.5vw;
+  color: #5d555f;
+}
+
+.cachorroPata {
+  position: absolute;
+  top: 10%;
+  left: 65%;
+  width: 30vw; 
+  max-width: 100%; 
+  height: auto;
+}
+
+.saibaMaisPC {
+  position: absolute;
+  left: 25%;
+  top: 58%; 
+  transform: translateX(-50%);
+  background-color: #42B3C8;
+  color: white;
+  border: none;
+  font-size: 1.2vw;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: "Be Vietnam Pro", sans-serif;
+  transition: 0.3s ease-in-out; 
+}
+
+.saibaMaisPC:hover {
+  background-color: white;
+  border: 2px solid #42B3C8;
+  color: #373737;
+  transition: 0.3s ease-in-out; 
+}
 
 /* ===== Propaganda Celular===== */
 
@@ -207,6 +262,7 @@ button:focus:focus {
   padding: 10px 20px;
   cursor: pointer;
   font-family: "Be Vietnam Pro", sans-serif;
+  transition: 0.3s ease-in-out; 
 }
 
 .saibaMais:hover {
@@ -217,7 +273,76 @@ button:focus:focus {
 }
 
 
-/* ===== Serviços ===== */
+
+/* ===== Serviços PC ===== */
+
+.serviçosPC, .div-serviços-btnPC {
+  padding: 0% 5% 0% 5%;
+}
+
+.serviçosPC h1 {
+  font-size: 1.5vw;
+  margin: 0.4% 0% 0% 1%;
+}
+
+.serviçosPC img {
+  width: 3%; 
+  max-width: 10%; 
+  height: auto; 
+}
+
+.div-serviçosPC-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0% 5% 0% 5%;
+}
+
+.div-serviçosPC-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza os itens */
+  padding: 0% 5% 0% 5%;
+}
+
+.btn-serviçosPC {
+  border: 2px #5e5e5e solid;
+  width: 200px; 
+  height: 200px; 
+  margin: 3% auto; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  border-radius: 15%;
+  justify-content: center; 
+  text-align: center; 
+}
+
+.btn-serviçosPC img {
+  width: 50%; 
+  height: auto; 
+  margin: 10% 0%; 
+}
+
+.btn-serviçosPC p {
+  text-align: center; 
+  font-size: 1vw; 
+}
+
+.btn-serviçosPC:hover {
+  background-color: #42B3C8; 
+}
+
+.btn-serviçosPC:hover img {
+  filter: brightness(0) invert(1); 
+}
+
+.btn-serviçosPC:hover p {
+  color: white!important; 
+}
+
+
+/* ===== Serviços Celular ===== */
 
 .serviços img {
   width: 30%; 
@@ -229,6 +354,7 @@ button:focus:focus {
   font-size: 3.5vw;
   margin: 3% 0% 0% 4%;
 }
+
 .div-serviços-btn {
   display: flex;
   flex-wrap: wrap;
@@ -373,6 +499,15 @@ button:focus:focus {
   font-size: 2vw;
 }
 
+.rodape a {
+  transition: 0.2s ease-in-out;
+}
+
+.rodape a:hover {
+  color: #5961B4;
+  transition: 0.2s ease-in-out;
+}
+
 .conteudoFooter {
   display: flex;
   align-items: center; 
@@ -395,8 +530,12 @@ button:focus:focus {
   justify-content: flex-end;
 }
 
-.redesSociais img {
+.redesSociais a {
   margin-left: 2%;
+}
+
+.redesSociais a svg path{
+  transition: 0.2s ease-in-out;
 }
 
 .rodape {
@@ -404,6 +543,26 @@ button:focus:focus {
   width: 100%; 
   height: 100%; 
   background-color: #F0F2FF; 
+}
+
+.link:hover svg path {
+  fill: #0e76a8;
+  transition: 0.2s ease-in-out;
+}
+
+.whats:hover svg path {
+  fill: #25D366;
+  transition: 0.2s ease-in-out;
+}
+
+.face:hover svg path {
+  fill: #3b5998;
+  transition: 0.2s ease-in-out;
+}
+
+.insta:hover svg path {
+  fill: #E1306C;
+  transition: 0.2s ease-in-out;
 }
 
 .img-top-right {
@@ -488,5 +647,45 @@ button:focus:focus {
   .saibaMais {
     padding: 4px 12px;
     font-size: 12px;
+  }
+}
+
+@media (max-width: 1380px) {
+  .texto1-PC {
+    top: 20%;
+    width: 70%;
+  }
+
+  .texto2-PC {
+    top: 45%;
+    width: 70%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .btn-serviçosPC {
+    width: 250px; 
+    height: 250px; 
+  }
+}
+
+@media (max-width: 1340px) {
+  .btn-serviçosPC {
+    width: 140px; 
+    height: 140px; 
+  }
+}
+
+@media (max-width: 980px) {
+  .btn-serviçosPC {
+    width: 100px; 
+    height: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-serviçosPC {
+    width: 80px;
+    height: 80px;
   }
 }
