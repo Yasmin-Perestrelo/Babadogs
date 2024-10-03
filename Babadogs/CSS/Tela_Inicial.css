@@ -1,12 +1,12 @@
 /*Resetando os valores padrões da página*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    outline: none;
-    list-style: none;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+}
 
 /*geral para todos os links, parágrafos, títulos, label e select*/
 li,
@@ -46,103 +46,106 @@ button:focus:focus {
 
 /* ===== Menu Sanduíche ===== */
 
-  /*Largura do menu*/
-  .offcanvas {
-    width: 60%;
-  }
+/*Largura do menu*/
+.offcanvas {
+  width: 60%;
+}
 
-  .logoTexto {
-    width: 60%;
-  }
+.logoTexto {
+  width: 60%;
+}
 
-  .offcanvas-header {
-    display: flex;
-    justify-content: center; 
-    position: relative; 
-  }
-  
-  .btn-close.fechar {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-  }
-  
-  .offcanvas-body, .offcanvas-start {
-    background-color: #F0F2FF;
-  }
-  
-  /*Escurecer o fundo*/
-  .offcanvas-backdrop.show {
-    background-color: rgba(0, 0, 0, 0.5);
-  }
+.offcanvas-header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
 
-  /*Altura total da página*/
-  .offcanvas-start {
-    height: 100vh;
-  }
+.btn-close.fechar {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
 
-  /*Borda do botão transparente*/
-  .navbar-toggler {
-    border: 0px transparent solid;
-  }
+.offcanvas-body,
+.offcanvas-start {
+  background-color: #F0F2FF;
+}
 
-  /*tamanho ícone de menu*/
-  .navbar-toggler-icon {
-    width: 2em;
-    height: 2em;
-  }
+/*Escurecer o fundo*/
+.offcanvas-backdrop.show {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
-  .dropdown-item {
-    margin-left: 20px;
-    align-items: center;
-  }
+/*Altura total da página*/
+.offcanvas-start {
+  height: 100vh;
+}
 
-  .list-unstyled li {
-    padding: 5px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-  }
+/*Borda do botão transparente*/
+.navbar-toggler {
+  border: 0px transparent solid;
+}
 
-  .list-unstyled li svg path{
-    transition: 0.3s ease-in-out;
-  }
+/*tamanho ícone de menu*/
+.navbar-toggler-icon {
+  width: 2em;
+  height: 2em;
+}
 
-  .list-unstyled li:hover svg path {
-    fill: #5961B4;
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-  }
-  
-  .list-unstyled li:hover a {
-    color: #5961B4;
-    transition: 0.3s ease-in-out;
-  }
+.dropdown-item {
+  margin-left: 20px;
+  align-items: center;
+}
 
-  .sair {
-    width: 25px;
-    height: 25px;
-    color: #5b5b5e;
-  }
+.list-unstyled li {
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.list-unstyled li svg path {
+  transition: 0.3s ease-in-out;
+}
+
+.list-unstyled li:hover svg path {
+  fill: #5961B4;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.list-unstyled li:hover a {
+  color: #5961B4;
+  transition: 0.3s ease-in-out;
+}
+
+.sair {
+  width: 25px;
+  height: 25px;
+  color: #5b5b5e;
+}
 
 
 /* ===== Menu Celular ===== */
 
-  .user, .sign {
-    font-size: 30px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out; 
-  }
+.user,
+.sign {
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
 
-  .sign {
-    margin-right: 20px;
-  }
+.sign {
+  margin-right: 20px;
+}
 
-  .user:hover, .sign:hover {
-    color: #42B3C8;
-    transition: 0.3s ease-in-out; 
-  }
+.user:hover,
+.sign:hover {
+  color: #42B3C8;
+  transition: 0.3s ease-in-out;
+}
 
-  /* ===== Menu PC ===== */
+/* ===== Menu PC ===== */
 .menuPC {
   padding: 1% 2% 0% 2%;
 }
@@ -159,32 +162,35 @@ button:focus:focus {
   margin-right: 20px;
 }
 
-.login, .cadastro {
+.login,
+.cadastro {
   background-color: white;
   border: 2px solid #42B3C8;
   color: #373737;
 }
 
-.login:hover, .cadastro:hover {
+.login:hover,
+.cadastro:hover {
   background-color: #42B3C8;
   border: 2px solid #42B3C8;
   color: white;
-  transition: 0.3s ease-in-out; 
+  transition: 0.3s ease-in-out;
 }
 
 /* ------------ MAIN ------------ */
 
 /* ===== Propaganda PC===== */
 
-.texto1-PC, .texto2-PC {
+.texto1-PC,
+.texto2-PC {
   position: absolute;
   padding: 0% 5% 0% 5%;
   width: 60%;
 }
 
 .texto1-PC {
-  top: 20%; 
-  font-size: 2.5vw; 
+  top: 20%;
+  font-size: 2.5vw;
   font-weight: 600;
   color: #7b6b80;
 }
@@ -199,15 +205,15 @@ button:focus:focus {
   position: absolute;
   top: 10%;
   left: 65%;
-  width: 30vw; 
-  max-width: 100%; 
+  width: 30vw;
+  max-width: 100%;
   height: auto;
 }
 
 .saibaMaisPC {
   position: absolute;
   left: 25%;
-  top: 58%; 
+  top: 58%;
   transform: translateX(-50%);
   background-color: #42B3C8;
   color: white;
@@ -216,14 +222,14 @@ button:focus:focus {
   padding: 10px 20px;
   cursor: pointer;
   font-family: "Be Vietnam Pro", sans-serif;
-  transition: 0.3s ease-in-out; 
+  transition: 0.3s ease-in-out;
 }
 
 .saibaMaisPC:hover {
   background-color: white;
   border: 2px solid #42B3C8;
   color: #373737;
-  transition: 0.3s ease-in-out; 
+  transition: 0.3s ease-in-out;
 }
 
 /* ===== Propaganda Celular===== */
@@ -232,15 +238,16 @@ button:focus:focus {
   position: relative;
 }
 
-.texto1, .texto2 {
+.texto1,
+.texto2 {
   position: absolute;
-  width: 100%; 
+  width: 100%;
   padding: 0% 5% 0% 5%;
 }
 
 .texto1 {
-  top: 20%; 
-  font-size: 5vw; 
+  top: 20%;
+  font-size: 5vw;
   font-weight: 600;
   color: #7b6b80;
 }
@@ -254,7 +261,7 @@ button:focus:focus {
 .saibaMais {
   position: absolute;
   left: 50%;
-  top: 65%; 
+  top: 65%;
   transform: translateX(-50%);
   background-color: #42B3C8;
   color: white;
@@ -262,21 +269,22 @@ button:focus:focus {
   padding: 10px 20px;
   cursor: pointer;
   font-family: "Be Vietnam Pro", sans-serif;
-  transition: 0.3s ease-in-out; 
+  transition: 0.3s ease-in-out;
 }
 
 .saibaMais:hover {
   background-color: white;
   border: 2px solid #42B3C8;
   color: #373737;
-  transition: 0.3s ease-in-out; 
+  transition: 0.3s ease-in-out;
 }
 
 
 
 /* ===== Serviços PC ===== */
 
-.serviçosPC, .div-serviços-btnPC {
+.serviçosPC,
+.div-serviços-btnPC {
   padding: 0% 5% 0% 5%;
 }
 
@@ -286,9 +294,9 @@ button:focus:focus {
 }
 
 .serviçosPC img {
-  width: 3%; 
-  max-width: 10%; 
-  height: auto; 
+  width: 3%;
+  max-width: 10%;
+  height: auto;
 }
 
 .div-serviçosPC-btn {
@@ -301,53 +309,54 @@ button:focus:focus {
 .div-serviçosPC-btn {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centraliza os itens */
+  justify-content: center;
+  /* Centraliza os itens */
   padding: 0% 5% 0% 5%;
 }
 
 .btn-serviçosPC {
   border: 2px #5e5e5e solid;
-  width: 200px; 
-  height: 200px; 
-  margin: 3% auto; 
+  width: 200px;
+  height: 200px;
+  margin: 3% auto;
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
+  flex-direction: column;
+  align-items: center;
   border-radius: 15%;
-  justify-content: center; 
-  text-align: center; 
+  justify-content: center;
+  text-align: center;
 }
 
 .btn-serviçosPC img {
-  width: 50%; 
-  height: auto; 
-  margin: 10% 0%; 
+  width: 50%;
+  height: auto;
+  margin: 10% 0%;
 }
 
 .btn-serviçosPC p {
-  text-align: center; 
-  font-size: 1vw; 
+  text-align: center;
+  font-size: 1vw;
 }
 
 .btn-serviçosPC:hover {
-  background-color: #42B3C8; 
+  background-color: #42B3C8;
 }
 
 .btn-serviçosPC:hover img {
-  filter: brightness(0) invert(1); 
+  filter: brightness(0) invert(1);
 }
 
 .btn-serviçosPC:hover p {
-  color: white!important; 
+  color: white !important;
 }
 
 
 /* ===== Serviços Celular ===== */
 
 .serviços img {
-  width: 30%; 
-  max-width: 10%; 
-  height: auto; 
+  width: 30%;
+  max-width: 10%;
+  height: auto;
 }
 
 .serviços h1 {
@@ -364,91 +373,93 @@ button:focus:focus {
 
 .btn-serviços {
   border: 2px #5e5e5e solid;
-  width: 35vw; 
-  height: 35vw; 
-  margin: 5% auto; 
+  width: 35vw;
+  height: 35vw;
+  margin: 5% auto;
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
+  flex-direction: column;
+  align-items: center;
   border-radius: 15%;
 }
 
 .btn-serviços img {
-  width: 60%; 
-  height: auto; 
+  width: 60%;
+  height: auto;
   margin: 20% 0% 20% 0%;
 }
 
 .pote {
-  margin: 15% 0% 15% 0%!important;
+  margin: 15% 0% 15% 0% !important;
 }
 
 .animais {
-  margin: 15% 0% 9% 0%!important;
+  margin: 15% 0% 9% 0% !important;
 }
 
 .daycare {
-  margin: 11% 0% 9% 0%!important;
+  margin: 11% 0% 9% 0% !important;
 }
 
 .mapa {
-  margin: 15% 0% 9% 0%!important;
+  margin: 15% 0% 9% 0% !important;
 }
 
 .saude {
-  margin: 18% 0% 13% 0%!important;
+  margin: 18% 0% 13% 0% !important;
 }
 
 .btn-serviços p {
-  text-align: center; 
+  text-align: center;
   font-size: 3.1vw;
 }
 
 .btn-serviços:hover {
-  background-color: #42B3C8; 
+  background-color: #42B3C8;
 }
 
 .btn-serviços:hover img {
-  filter: brightness(0) invert(1); 
+  filter: brightness(0) invert(1);
 }
 
 .btn-serviços:hover p {
-  color: white!important; 
+  color: white !important;
 }
 
 
 /* ===== Profissionais ===== */
 
-.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
   align-items: center;
   display: grid;
   justify-items: center;
 }
 
 .carousel {
-  padding: 0px 50px 50px 50px!important;
+  padding: 0px 50px 50px 50px !important;
 }
 
 .card {
   position: relative;
   border-radius: 20px;
-  width: 18rem!important;
+  width: 18rem !important;
   margin-top: 20%;
   transition: 0.3s ease-in-out;
 }
 
 .imagem_profissional {
   position: relative;
-  top: -50px; 
-  border-radius: 20px 20px 0px 0px; 
-  height: 290px; 
-  overflow: hidden; 
+  top: -50px;
+  border-radius: 20px 20px 0px 0px;
+  height: 290px;
+  overflow: hidden;
 }
 
 .imagem_profissional img {
-  width: 100%; 
+  width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 
@@ -458,7 +469,8 @@ button:focus:focus {
 }
 
 .card:hover {
-  transform: scale(1.05) translateY(-5px); /* Aumenta o tamanho e levanta o card */
+  transform: scale(1.05) translateY(-5px);
+  /* Aumenta o tamanho e levanta o card */
   transition: 0.3s ease-in-out;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
@@ -478,7 +490,9 @@ button:focus:focus {
   color: white;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon, .carousel-indicators {
+.carousel-control-prev-icon,
+.carousel-control-next-icon,
+.carousel-indicators {
   filter: invert(48%) sepia(74%) saturate(3693%) hue-rotate(157deg) brightness(95%) contrast(99%);
 }
 
@@ -510,18 +524,18 @@ button:focus:focus {
 
 .conteudoFooter {
   display: flex;
-  align-items: center; 
-  justify-content: center; 
-  margin-bottom: 15px; 
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
 }
 
 .conteudoFooter img {
-  width: 10%; 
-  height: auto; 
+  width: 10%;
+  height: auto;
 }
 
 .conteudoFooter .dropdown-item {
-  margin-left: 10px; 
+  margin-left: 10px;
   font-size: 3vw;
 }
 
@@ -534,15 +548,15 @@ button:focus:focus {
   margin-left: 2%;
 }
 
-.redesSociais a svg path{
+.redesSociais a svg path {
   transition: 0.2s ease-in-out;
 }
 
 .rodape {
-  position: relative; 
-  width: 100%; 
-  height: 100%; 
-  background-color: #F0F2FF; 
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #F0F2FF;
 }
 
 .link:hover svg path {
@@ -566,61 +580,105 @@ button:focus:focus {
 }
 
 .img-top-right {
-  position: absolute; 
-  top: 16px; 
-  right: 16px; 
-  width: 7%; 
-  height: auto; 
-  max-width: 100px; 
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 7%;
+  height: auto;
+  max-width: 100px;
 }
 
 .img-bottom-left {
-  position: absolute; 
-  bottom: 17%; 
-  left: 4%; 
-  width: 7%; 
-  height: auto; 
+  position: absolute;
+  bottom: 17%;
+  left: 4%;
+  width: 7%;
+  height: auto;
   max-width: 100px;
 }
 
 .bolinha {
   position: absolute;
-  border-radius: 50%; /* Faz o elemento ser redondo */
-  background-color: white; /* Cor da bolinha */
-  width: 20px; /* Largura da bolinha */
-  height: 20px; /* Altura da bolinha */
+  border-radius: 50%;
+  /* Faz o elemento ser redondo */
+  background-color: white;
+  /* Cor da bolinha */
+  width: 20px;
+  /* Largura da bolinha */
+  height: 20px;
+  /* Altura da bolinha */
 }
 
 /* Crie várias bolinhas em diferentes posições */
-.bolinha1 { top: -3%; left: 3%; }
-.bolinha2 { top: -3%; left: 13%; }
-.bolinha3 { top: -3%; left: 23%; }
-.bolinha4 { top: -3%; left: 33%; }
-.bolinha5 { top: -3%; left: 43%; }
-.bolinha6 { top: -3%; left: 53%; }
-.bolinha7 { top: -3%; left: 63%; }
-.bolinha8 { top: -3%; left: 73%; }
-.bolinha9 { top: -3%; left: 83%; }
-.bolinha10 { top: -3%; left: 93%; }
+.bolinha1 {
+  top: -3%;
+  left: 3%;
+}
+
+.bolinha2 {
+  top: -3%;
+  left: 13%;
+}
+
+.bolinha3 {
+  top: -3%;
+  left: 23%;
+}
+
+.bolinha4 {
+  top: -3%;
+  left: 33%;
+}
+
+.bolinha5 {
+  top: -3%;
+  left: 43%;
+}
+
+.bolinha6 {
+  top: -3%;
+  left: 53%;
+}
+
+.bolinha7 {
+  top: -3%;
+  left: 63%;
+}
+
+.bolinha8 {
+  top: -3%;
+  left: 73%;
+}
+
+.bolinha9 {
+  top: -3%;
+  left: 83%;
+}
+
+.bolinha10 {
+  top: -3%;
+  left: 93%;
+}
 
 
 
 /* ------------ RESPONSIVIDADE ------------ */
 
 @media (max-width: 380px) {
-  .logo-escrita img{
+  .logo-escrita img {
     width: 100%;
   }
 
-  .logo-escrita{
+  .logo-escrita {
     width: 50%;
-  } 
+  }
 }
 
 @media (min-width: 576px) and (max-width: 700px) {
+
   .user,
   .sign {
-    display: inline !important; 
+    display: inline !important;
   }
 
   .d-md-flex {
@@ -664,21 +722,21 @@ button:focus:focus {
 
 @media (min-width: 1700px) {
   .btn-serviçosPC {
-    width: 250px; 
-    height: 250px; 
+    width: 250px;
+    height: 250px;
   }
 }
 
 @media (max-width: 1340px) {
   .btn-serviçosPC {
-    width: 140px; 
-    height: 140px; 
+    width: 140px;
+    height: 140px;
   }
 }
 
 @media (max-width: 980px) {
   .btn-serviçosPC {
-    width: 100px; 
+    width: 100px;
     height: 100px;
   }
 }
