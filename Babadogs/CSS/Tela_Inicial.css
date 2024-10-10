@@ -288,12 +288,12 @@ button:focus:focus {
   padding: 0% 5% 0% 5%;
 }
 
-.serviçosPC h1 {
+.serviçosPC h1, .profissionalPC h1 {
   font-size: 1.5vw;
   margin: 0.4% 0% 0% 1%;
 }
 
-.serviçosPC img {
+.serviçosPC img, .profissionalPC img {
   width: 3%;
   max-width: 10%;
   height: auto;
@@ -428,6 +428,10 @@ button:focus:focus {
 
 /* ===== Profissionais ===== */
 
+.profissionalPC {
+  padding: 0% 5% 2% 5%;
+}
+
 .carousel-item-next,
 .carousel-item-prev,
 .carousel-item.active {
@@ -470,7 +474,6 @@ button:focus:focus {
 
 .card:hover {
   transform: scale(1.05) translateY(-5px);
-  /* Aumenta o tamanho e levanta o card */
   transition: 0.3s ease-in-out;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
@@ -499,9 +502,30 @@ button:focus:focus {
 
 /* ------------ RODAPÉ ------------ */
 
+.rodapePC {
+  padding: 2% 5% 1% 5%!important;
+}
+
+.rodapePC .teste {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+  font-size: 1vw;
+}
+
+.rodapePC .teste div {
+  display: flex; 
+  font-size: 1.2vw;
+  gap: 10px;
+}
+
+.rodapePC p {
+  font-size: 0.8vw;
+}
+
 /* ===== Celular===== */
 
-.rodape {
+.rodape, .rodapePC {
   background-color: #F0F2FF;
   width: 100%;
   padding: 6% 4% 0% 4%;
@@ -542,6 +566,7 @@ button:focus:focus {
 .redesSociais {
   display: flex;
   justify-content: flex-end;
+  gap: 10px; 
 }
 
 .redesSociais a {
@@ -747,3 +772,4 @@ button:focus:focus {
     height: 80px;
   }
 }
+
