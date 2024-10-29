@@ -1,10 +1,111 @@
-/*Resetando os valores padrões da página*/
+/* Resetando os valores padrões da página */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: sans-serif;
-    outline: none;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+/* ------------ Cabeçalho ------------ */
+
+header {
+  background-color: #ffffff;
+}
+
+.top-header {
+  background-color: #0022ff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.search-box {
+  position: relative; /* Necessário para o posicionamento do ícone */
+}
+
+.search-box input {
+  border: 1px solid #BFBFBF;
+  border-radius: 10px;
+}
+
+.profile {
+  margin-left: 20px; /* Adiciona espaço à esquerda do perfil para evitar colisão */
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px; /* Espaço entre a foto e o nome */
+}
+
+.profile-name {
+  font-weight: bold;
+}
+
+/* Barra de navegação inferior */
+.bottom-header {
+  background-color: #E9EBFB;
+}
+
+.bottom-header ul {
+  padding: 0;
+}
+
+.bottom-header ul li {
+  display: inline-block;
+}
+
+.bottom-header ul li a {
+  color: #5B5B5E; /* Cor padrão do texto */
+  font-size: 16px;
+  padding: 5px 10px; /* Espaçamento para melhor clickabilidade */
+  transition: color 0.3s; /* Transição suave para a cor */
+}
+
+/* Efeito de hover para os itens da barra de navegação */
+.bottom-header ul li a:hover,
+.bottom-header ul li a.active {
+  color: #5961B4; /* Cor do texto e ícone quando estiver em hover ou ativo */
+}
+
+/* Para garantir que os ícones também mudem de cor */
+.bottom-header ul li a:hover i,
+.bottom-header ul li a.active i {
+  color: #5961B4; /* Cor dos ícones quando estiver em hover ou ativo */
+}
+
+/* Ícones */
+.bottom-header ul li a i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .top-header {
+    flex-direction: column;
+    align-items: flex-start;
   }
+
+  .search-box {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .bottom-header ul {
+    flex-direction: column;
+  }
+
+  .bottom-header ul li {
+    margin: 5px 0;
+  }
+}
+
+.logo {
+  max-height: 70px; /* Controla o tamanho da logo */
+}
+
+.logo-name {
+  max-height: 70px; /* Controla o tamanho do nome da logo */
+  margin-left: -5% !important;
+}
