@@ -175,153 +175,174 @@ header {
 /* ------------ conteudo principal ------------ */
 
 .serviçosPC,
-  .div-serviços-btnPC {
-    padding: 0% 5% 0% 5%;
-    
-  }
-  
-  .serviçosPC h1, .profissionalPC h1 {
-    font-size: 1.5vw;
-    margin: 0.4% 0% 0% 1%;
-    ;
-    
-  }
-  
-  .serviçosPC img, .profissionalPC img {
-    width: 3%;
-    max-width: 10%;
-    height: auto;
+.div-serviços-btnPC {
+    padding: 0% 5% 0% 5%; /* Define o preenchimento para os elementos com essas classes */
+}
 
-  }
+.serviçosPC h1, .profissionalPC h1 {
+    font-size: 1.5vw; /* Define o tamanho da fonte para os elementos <h1> nessas classes */
+    margin: 0.4% 0% 0% 1%; /* Define a margem */
+}
+
+.serviçosPC img, .profissionalPC img {
+    width: 3%; /* Define a largura das imagens nessas classes */
+    max-width: 10%; /* Define a largura máxima */
+    height: auto; /* Ajusta automaticamente a altura */
+}
 
 /* Barra de Título */
-.title-bar {  /*"posição meu perfil em relação ao resto da tela"*/
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    margin-bottom: 50px;
+.title-bar {  
+    display: flex; /* Alinha os itens no centro */
+    align-items: center; /* Centraliza os itens verticalmente */
+    gap: 5px; /* Adiciona espaço entre os itens */
+    margin-bottom: 50px; /* Define a margem inferior */
 }
 
-.title-bar .logo { /*"inicio>meu perfil*/
-    width: 40px;
-    height: 10px;
-    
+.title-bar .logo { 
+    width: 40px; /* Define a largura do logo */
+    height: 10px; /* Define a altura do logo */
 }
 
-.title-bar h1 { /*tamanho e cor de meu perfil*/
-    font-size: 100px;
-    color: #000000;
+.title-bar h1 { 
+    font-size: 100px; /* Define o tamanho da fonte do título */
+    color: #000000; /* Define a cor do título */
 }
 
 /* Caminho de Navegação */
 .breadcrumb {
-    font-size: 14px;  /*cor da palvra meu perfil*/
-    color: ;
-    margin-bottom: 20px;
-
+    font-size: 14px;  /* Define o tamanho da fonte */
+    color: ; /* Define a cor (não especificada) */
+    margin-bottom: 20px; /* Define a margem inferior */
 }
 
-.breadcrumb a { /*cor da palavra inicio*/
-    color: #333;
-    text-decoration: none;
+.breadcrumb a { 
+    color: #333; /* Define a cor dos links */
+    text-decoration: none; /* Remove a decoração do texto */
 }
 
 .breadcrumb a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
 /* Wrapper para alinhar sidebar e conteúdo */
-.content-wrapper {  /*mexa aqui para mudar o sobre mim*/
-    display: flex;
-    margin-top: 10px;
+.content-wrapper { 
+    display: flex; /* Alinha a barra lateral e o conteúdo principal lado a lado */
+    margin-top: 100px; /* Define a margem superior */
 }
 
-.sidebar {    /*mexa aqui para mexer na lista de meu p.. ate historico de C..*/
-    width: 200px;
-    background-color: #fff;
-    padding: 20px;
-    border-right: 1px solid #ddd;
+.sidebar { 
+    width: 200px; /* Define a largura da barra lateral */
+    background-color: #fff; /* Define a cor de fundo */
+    padding: 20px; /* Define o preenchimento */
+    border-right: 1px solid #ddd; /* Adiciona uma borda à direita */
 }
 
-.sidebar ul {   /*mexa aqui para mexer na lista de meu p.. ate historico de C..*/
-    list-style: none;
-    padding-left: 10;
+.sidebar ul { 
+    list-style: none; /* Remove o estilo da lista */
+    padding-left: 10; /* Define o preenchimento à esquerda */
 }
 
-.sidebar ul li { /*mexa aqui para mexer na lista de meu p.. ate historico de C..*/
-    margin-bottom: 30px;
+.sidebar ul li { 
+    margin-bottom: 30px; /* Define a margem inferior dos itens da lista */
 }
 
-.sidebar ul li a { /*mexa aqui para mexer na lista de meu p.. ate historico de C..*/
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+.sidebar ul li a { 
+    text-decoration: none; /* Remove a decoração do texto */
+    color: #333; /* Define a cor dos links */
+    font-weight: bold; /* Define o peso da fonte */
 }
 
-.delete-account { /*mexa aqui para mexer no botão de excluir*/
-    margin-top: 20px;
-    color: red;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    margin-left: 30px;
+.delete-account { 
+    margin-top: 20px; /* Define a margem superior */
+    color: red; /* Define a cor do texto */
+    background: none; /* Remove o fundo */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Define o cursor como ponteiro */
+    font-weight: bold; /* Define o peso da fonte */
+    margin-left: 30px; /* Define a margem à esquerda */
 }
 
-.profile-content { /*muda posição da parte perfil*/
-    flex: 10;
-    margin-lef: 10px;
+.profile-content { 
+    flex: 10; /* Define a flexibilidade */
+    margin-left: 100px; /* Define a margem à esquerda */
 }
 
-.profile-header {  /* mexa aqui para alterar a foto de perfil*/
-  display: flex;
-  flex-direction: column;
-  margin-left: 50px;
-  margin-bottom: 30px;
+.profile-header {  
+  display: flex; /* Define a exibição como flex */
+  flex-direction: column; /* Define a direção como coluna */
+  margin-left: 10px; /* Define a margem à esquerda */
+  margin-bottom: 30px; /* Define a margem inferior */
+}
+
+.profile-pic { 
+  width: 140px; /* Define a largura */
+  height: 80px; /* Define a altura */
+  border-radius: 5%; /* Define o raio da borda */
+  margin-bottom: 1px; /* Define a margem inferior */
+  margin-left: 100px; /* Define a margem à esquerda */
+}
+
+.profile-pic, .profile-info{
+
+margin-top: 25px;
 
 }
 
-.profile-pic {   /*muda posição da parte perfil*/
-  width: 80px;
-  height: 80px;
-  border-radius: 5%;
-  margin-bottom: 1px;
-  margin-left: 100px;
+.profile-info { 
+  margin-left: 20px; /* Define a margem à esquerda */
 }
 
-.profile-info {   /*muda posição da parte perfil*/
-  margin-left: 20px;
+.profile-info p, .profile-info span { 
+ margin-left: 3%;
+
+}
+
+.profile-info span {
+ margin-left: 7%;
+
 }
 
 
-.profile-info p, .profile-info span {  /*muda posição da parte perfil*/
-    color: #666;
+.profile-info p, .profile-info span { 
+    color: #666; /* Define a cor do texto */
 }
 
 .about-me, .media-gallery {
-    margin-top: 20px;
+    margin-top: 40px; /* Define a margem superior */
 }
 
-.about-me h3, .media-gallery h3 { /*cor de sobre mim e midia galeria*/
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #5961B4;
+.about-me{
+
+margin-left: 25%;
+
 }
 
-.gallery {   /*muda a posião das fotos da galeria*/
-    display: flex;
-    gap: 50px;
-    margin-top: 10px;
+.media-gallery {
+
+margin-left: 25%;
+}
+
+.about-me h3, .media-gallery h3 { 
+    font-size: 25px; /* Define o tamanho da fonte */
+    margin-bottom: 10px; /* Define a margem inferior */
+   
+    color: #5961B4; /* Define a cor do texto */
+}
+
+.gallery { 
+    display: flex; /* Define a exibição como flex */
+    gap: 50px; /* Adiciona espaço entre os itens */
+    margin-top: 10px; /* Define a margem superior */
 }
 
 .gallery-item {
-    text-align: right;    
-    width: 100px;
-    margin-left: 2%;
+    text-align: right; /* Alinha o texto à direita */
+    width: 100px; /* Define a largura */
+    margin-left: 2%; /* Define a margem à esquerda */
 }
 
 .gallery-item img {
-    width: 100%;
-    border-radius: 80px;
-    margin-bottom: 5px;
+    width: 100%; /* Define a largura */
+    border-radius: 80px; /* Define o raio da borda */
+    margin-bottom: 5px; /* Define a margem inferior */
 }
