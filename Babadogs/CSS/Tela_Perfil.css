@@ -180,12 +180,12 @@ header {
 }
 
 .serviçosPC h1, .profissionalPC h1 {
-    font-size: 1.5vw; /* Define o tamanho da fonte para os elementos <h1> nessas classes */
+    font-size: 6%; /* Define o tamanho da fonte para os elementos <h1> nessas classes */
     margin: 0.4% 0% 0% 1%; /* Define a margem */
 }
 
 .serviçosPC img, .profissionalPC img {
-    width: 3%; /* Define a largura das imagens nessas classes */
+    width: 10%; /* Define a largura das imagens nessas classes */
     max-width: 10%; /* Define a largura máxima */
     height: auto; /* Ajusta automaticamente a altura */
 }
@@ -210,14 +210,16 @@ header {
 
 /* Caminho de Navegação */
 .breadcrumb {
+    border-top: 1px solid #0c0c0c; width: 1800px; margin-left: 3%;
     font-size: 14px;  /* Define o tamanho da fonte */
-    color: ; /* Define a cor (não especificada) */
+    color: #000; /* Define a cor (não especificada) */
     margin-bottom: 20px; /* Define a margem inferior */
 }
 
 .breadcrumb a { 
     color: #333; /* Define a cor dos links */
     text-decoration: none; /* Remove a decoração do texto */
+    margin-left: 20px;
 }
 
 .breadcrumb a:hover {
@@ -228,13 +230,15 @@ header {
 .content-wrapper { 
     display: flex; /* Alinha a barra lateral e o conteúdo principal lado a lado */
     margin-top: 100px; /* Define a margem superior */
+    
+    
 }
 
 .sidebar { 
     width: 200px; /* Define a largura da barra lateral */
     background-color: #fff; /* Define a cor de fundo */
     padding: 20px; /* Define o preenchimento */
-    border-right: 1px solid #ddd; /* Adiciona uma borda à direita */
+    border-right: 1px solid #000000; /* Adiciona uma borda à direita */
 }
 
 .sidebar ul { 
@@ -274,15 +278,15 @@ header {
   margin-bottom: 30px; /* Define a margem inferior */
 }
 
-.profile-pic { 
-  width: 140px; /* Define a largura */
-  height: 80px; /* Define a altura */
+.profile-perfil { 
+  width: 150px; /* Define a largura */
+  height: 150px; /* Define a altura */
   border-radius: 5%; /* Define o raio da borda */
   margin-bottom: 1px; /* Define a margem inferior */
   margin-left: 100px; /* Define a margem à esquerda */
 }
 
-.profile-pic, .profile-info{
+.profile-perfil, .profile-info{
 
 margin-top: 25px;
 
@@ -314,7 +318,7 @@ margin-top: 25px;
 .about-me{
 
 margin-left: 25%;
-
+margin-top: -300px;
 }
 
 .media-gallery {
