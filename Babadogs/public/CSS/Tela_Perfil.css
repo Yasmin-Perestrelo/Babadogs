@@ -1,0 +1,352 @@
+/* Resetando os valores padrões da página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  outline: none; /* Remove a borda de foco */
+  list-style: none;
+}
+
+/* ------------ Cabeçalho ------------ */
+
+/* Estilos para o cabeçalho */
+header {
+  background-color: #ffffff; /* Cor do fundo do cabeçalho */
+}
+
+/* Parte Superior do Cabeçalho */
+.top-header {
+  background-color: #F0F2FF; /* Cor da parte superior para desktop */
+  height: 70px; /* Altura fixa para a parte superior do cabeçalho */
+  display: flex; /* Usar flexbox para alinhamento */
+  align-items: center; /* Centraliza verticalmente os itens */
+  justify-content: space-between; /* Espaço entre a logo e a caixa de pesquisa */
+  padding: 0 20px; /* Espaço nas laterais */
+}
+
+.bottom-header {
+  background-color: #E9EBFB; /* Cor da parte inferior para desktop */
+  box-shadow: 0 2px 8px rgba(190, 194, 230, 1); /* Sombra na parte inferior com 100% de opacidade */
+  height: 40px; /* Mantém a altura em 40px */
+  display: flex; /* Usar flexbox para alinhamento */
+  align-items: center; /* Centraliza verticalmente os itens */
+  position: relative; /* Para garantir que a sombra seja posicionada corretamente */
+}
+
+.bottom-header::before {
+  content: '';
+  display: block;
+  position: absolute; /* Para posicionar corretamente */
+  top: -2px; /* Ajusta a posição da sombra para ficar mais próxima do cabeçalho inferior */
+  left: 0; /* Garante que o pseudo-elemento comece do lado esquerdo */
+  right: 0; /* Garante que o pseudo-elemento se estenda até o lado direito */
+  height: 1px; /* Diminui a altura da sombra */
+  box-shadow: 0 1px 6px rgba(190, 194, 230, 1); /* Sombra superior com 100% de opacidade */
+  z-index: 1; /* Coloca o pseudo-elemento acima do cabeçalho */
+}
+
+/* Barra de pesquisa */
+.search-box {
+  position: relative;
+  flex-grow: 1;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-box input {
+  border: 1px solid #BCBCBC;
+  border-radius: 10px;
+  width: 100%; /* Largura total do contêiner */
+  padding: 10px 40px; /* Padding para adicionar espaço ao redor do texto */
+  outline: none; /* Remove a borda de foco */
+  box-shadow: none; /* Remove qualquer sombra */
+}
+
+/* Ícone da lupa */
+.search-icon {
+  position: absolute;
+  left: 10px; /* Ajuste a posição do ícone */
+  top: 50%; /* Centraliza verticalmente */
+  transform: translateY(-50%); /* Alinha verticalmente */
+  color: #BCBCBC; /* Cor do ícone */
+}
+
+/* Perfil */
+.profile {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px; /* Espaço entre a foto e o nome */
+}
+
+.profile-name {
+  font-weight: bold;
+}
+
+/* Navegação */
+.bottom-header ul {
+  padding: 0;
+  display: flex; /* Usar flexbox para disposição horizontal */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  list-style-type: none; /* Remove os marcadores da lista */
+  flex-grow: 1; /* Permite que a lista ocupe o espaço disponível */
+}
+
+.bottom-header ul li {
+  margin: 0 30px; /* Ajuste a distância horizontal entre os itens */
+}
+
+.bottom-header ul li a {
+  color: #5B5B5E; /* Cor padrão do texto */
+  font-size: 16px;
+  padding: 10px; /* Espaçamento para melhor clickabilidade */
+  transition: color 0.3s; /* Transição suave para a cor */
+}
+
+/* Efeito de hover para os itens da barra de navegação */
+.bottom-header ul li a:hover,
+.bottom-header ul li a.active {
+  color: #5961B4; /* Cor do texto e ícone quando em hover ou ativo */
+}
+
+/* Ícones */
+.bottom-header ul li a i {
+  margin-right: 5px; /* Espaço entre o ícone e o texto */
+  font-size: 18px; /* Tamanho dos ícones */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  /* Torna o fundo branco para dispositivos móveis */
+  .top-header, .bottom-header {
+      background-color: #ffffff !important;
+  }
+
+  /* Oculta a barra de navegação inferior no mobile */
+  .bottom-header {
+      display: none;
+  }
+
+  /* Ícone de engrenagem para expandir o menu mobile */
+  .navbar-toggler {
+      border: none;
+      font-size: 24px;
+      color: #000;
+  }
+
+  /* Esconde o nome do perfil e o nome da logo no mobile */
+  .profile-name,
+  .logo {
+      display: none;
+  }
+}
+
+/* Estilo para o logo */
+.logo-container {
+  display: flex; /* Usar flexbox para o alinhamento */
+  justify-content: center; /* Centraliza horizontalmente o conteúdo */
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  flex-grow: 1; /* Faz a logo ocupar o espaço necessário */
+}
+
+.logo {
+  height: 80px; /* Altura da logo */
+  margin-right: -20px; /* Ajuste negativo para deixar a logo e o nome próximos */
+}
+
+.logo-name {
+  height: 50px; /* Altura do nome da logo */
+}
+
+
+
+
+
+/* ------------ conteudo principal ------------ */
+
+.serviçosPC,
+.div-serviços-btnPC {
+    padding: 0% 5% 0% 5%; /* Define o preenchimento para os elementos com essas classes */
+}
+
+.serviçosPC h1, .profissionalPC h1 {
+    font-size: 6%; /* Define o tamanho da fonte para os elementos <h1> nessas classes */
+    margin: 0.4% 0% 0% 1%; /* Define a margem */
+}
+
+.serviçosPC img, .profissionalPC img {
+    width: 10%; /* Define a largura das imagens nessas classes */
+    max-width: 10%; /* Define a largura máxima */
+    height: auto; /* Ajusta automaticamente a altura */
+}
+
+/* Barra de Título */
+.title-bar {  
+    display: flex; /* Alinha os itens no centro */
+    align-items: center; /* Centraliza os itens verticalmente */
+    gap: 5px; /* Adiciona espaço entre os itens */
+    margin-bottom: 50px; /* Define a margem inferior */
+}
+
+.title-bar .logo { 
+    width: 40px; /* Define a largura do logo */
+    height: 10px; /* Define a altura do logo */
+}
+
+.title-bar h1 { 
+    font-size: 100px; /* Define o tamanho da fonte do título */
+    color: #000000; /* Define a cor do título */
+}
+
+/* Caminho de Navegação */
+.breadcrumb {
+    border-top: 1px solid #0c0c0c; width: 1800px; margin-left: 3%;
+    font-size: 14px;  /* Define o tamanho da fonte */
+    color: #000; /* Define a cor (não especificada) */
+    margin-bottom: 20px; /* Define a margem inferior */
+}
+
+.breadcrumb a { 
+    color: #333; /* Define a cor dos links */
+    text-decoration: none; /* Remove a decoração do texto */
+    margin-left: 20px;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Wrapper para alinhar sidebar e conteúdo */
+.content-wrapper { 
+    display: flex; /* Alinha a barra lateral e o conteúdo principal lado a lado */
+    margin-top: 100px; /* Define a margem superior */
+    
+    
+}
+
+.sidebar { 
+    width: 200px; /* Define a largura da barra lateral */
+    background-color: #fff; /* Define a cor de fundo */
+    padding: 20px; /* Define o preenchimento */
+    border-right: 1px solid #000000; /* Adiciona uma borda à direita */
+}
+
+.sidebar ul { 
+    list-style: none; /* Remove o estilo da lista */
+    padding-left: 10; /* Define o preenchimento à esquerda */
+}
+
+.sidebar ul li { 
+    margin-bottom: 30px; /* Define a margem inferior dos itens da lista */
+}
+
+.sidebar ul li a { 
+    text-decoration: none; /* Remove a decoração do texto */
+    color: #333; /* Define a cor dos links */
+    font-weight: bold; /* Define o peso da fonte */
+}
+
+.delete-account { 
+    margin-top: 20px; /* Define a margem superior */
+    color: red; /* Define a cor do texto */
+    background: none; /* Remove o fundo */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Define o cursor como ponteiro */
+    font-weight: bold; /* Define o peso da fonte */
+    margin-left: 30px; /* Define a margem à esquerda */
+}
+
+.profile-content { 
+    flex: 10; /* Define a flexibilidade */
+    margin-left: 100px; /* Define a margem à esquerda */
+}
+
+.profile-header {  
+  display: flex; /* Define a exibição como flex */
+  flex-direction: column; /* Define a direção como coluna */
+  margin-left: 10px; /* Define a margem à esquerda */
+  margin-bottom: 30px; /* Define a margem inferior */
+}
+
+.profile-perfil { 
+  width: 150px; /* Define a largura */
+  height: 150px; /* Define a altura */
+  border-radius: 5%; /* Define o raio da borda */
+  margin-bottom: 1px; /* Define a margem inferior */
+  margin-left: 100px; /* Define a margem à esquerda */
+}
+
+.profile-perfil, .profile-info{
+
+margin-top: 25px;
+
+}
+
+.profile-info { 
+  margin-left: 20px; /* Define a margem à esquerda */
+}
+
+.profile-info p, .profile-info span { 
+ margin-left: 3%;
+
+}
+
+.profile-info span {
+ margin-left: 7%;
+
+}
+
+
+.profile-info p, .profile-info span { 
+    color: #666; /* Define a cor do texto */
+}
+
+.about-me, .media-gallery {
+    margin-top: 40px; /* Define a margem superior */
+}
+
+.about-me{
+
+margin-left: 25%;
+margin-top: -300px;
+}
+
+.media-gallery {
+
+margin-left: 25%;
+}
+
+.about-me h3, .media-gallery h3 { 
+    font-size: 25px; /* Define o tamanho da fonte */
+    margin-bottom: 10px; /* Define a margem inferior */
+   
+    color: #5961B4; /* Define a cor do texto */
+}
+
+.gallery { 
+    display: flex; /* Define a exibição como flex */
+    gap: 50px; /* Adiciona espaço entre os itens */
+    margin-top: 10px; /* Define a margem superior */
+}
+
+.gallery-item {
+    text-align: right; /* Alinha o texto à direita */
+    width: 100px; /* Define a largura */
+    margin-left: 2%; /* Define a margem à esquerda */
+}
+
+.gallery-item img {
+    width: 100%; /* Define a largura */
+    border-radius: 80px; /* Define o raio da borda */
+    margin-bottom: 5px; /* Define a margem inferior */
+}
