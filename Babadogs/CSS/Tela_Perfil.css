@@ -174,20 +174,24 @@ header {
 
 /* ------------ conteudo principal ------------ */
 
-.serviçosPC,
-.div-serviços-btnPC {
-    padding: 0% 5% 0% 5%; /* Define o preenchimento para os elementos com essas classes */
+.main-content {
+  display: flex;
+  justify-content: center; /* Centraliza os itens na tela */
+  align-items: center; /* Alinha os itens no centro verticalmente */
+  margin-top: 70px;
+  margin-bottom: 10px;
 }
 
-.serviçosPC h1, .profissionalPC h1 {
-    font-size: 6%; /* Define o tamanho da fonte para os elementos <h1> nessas classes */
-    margin: 0.4% 0% 0% 1%; /* Define a margem */
+.serviçosPC {
+  display: flex; /* Define a disposição lado a lado */
+  align-items: center; /* Centraliza o texto e a imagem verticalmente */
 }
 
-.serviçosPC img, .profissionalPC img {
-    width: 10%; /* Define a largura das imagens nessas classes */
-    max-width: 10%; /* Define a largura máxima */
-    height: auto; /* Ajusta automaticamente a altura */
+.serviçosPC img {
+  width: 25px; /* Ajuste o tamanho da imagem como preferir */
+  margin-left: 80px;
+  cursor: move; /* Indica que a imagem pode ser movida */
+  margin-bottom: 15px;
 }
 
 /* Barra de Título */
@@ -210,14 +214,14 @@ header {
 
 /* Caminho de Navegação */
 .breadcrumb {
-    border-top: 1px solid #0c0c0c; width: 1800px; margin-left: 3%;
+    border-top: 1px solid #000000; width: 1800px; margin-left: 3%;
     font-size: 14px;  /* Define o tamanho da fonte */
-    color: #000; /* Define a cor (não especificada) */
-    margin-bottom: 20px; /* Define a margem inferior */
+    color: #000000; /* Define a cor (não especificada) */
+     /* Define a margem inferior */
 }
 
 .breadcrumb a { 
-    color: #333; /* Define a cor dos links */
+    color: #000000; /* Define a cor dos links */
     text-decoration: none; /* Remove a decoração do texto */
     margin-left: 20px;
 }
@@ -271,6 +275,19 @@ header {
     margin-left: 100px; /* Define a margem à esquerda */
 }
 
+
+.contact-icons {
+  display: flex;
+  gap: 15px; /* Espaçamento entre os ícones */
+  font-size: 24px; /* Tamanho dos ícones */
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.contact-icons i {
+  color: #333; /* Cor dos ícones */
+}
+
 .profile-header {  
   display: flex; /* Define a exibição como flex */
   flex-direction: column; /* Define a direção como coluna */
@@ -282,7 +299,7 @@ header {
   width: 150px; /* Define a largura */
   height: 150px; /* Define a altura */
   border-radius: 5%; /* Define o raio da borda */
-  margin-bottom: 1px; /* Define a margem inferior */
+  margin-bottom: 10px; /* Define a margem inferior */
   margin-left: 100px; /* Define a margem à esquerda */
 }
 
@@ -302,7 +319,7 @@ margin-top: 25px;
 }
 
 .profile-info span {
- margin-left: 7%;
+ margin-left: 6%;
 
 }
 
@@ -323,7 +340,8 @@ margin-top: -300px;
 
 .media-gallery {
 
-margin-left: 25%;
+ position: absolute;
+  margin-left: 25%;
 }
 
 .about-me h3, .media-gallery h3 { 
@@ -333,20 +351,180 @@ margin-left: 25%;
     color: #5961B4; /* Define a cor do texto */
 }
 
-.gallery { 
-    display: flex; /* Define a exibição como flex */
-    gap: 50px; /* Adiciona espaço entre os itens */
-    margin-top: 10px; /* Define a margem superior */
+.gallery-row {
+  display: flex;
+  gap: 20px; /* Espaçamento entre cada conjunto de imagens */
 }
 
-.gallery-item {
-    text-align: right; /* Alinha o texto à direita */
-    width: 100px; /* Define a largura */
-    margin-left: 2%; /* Define a margem à esquerda */
+.gallery-stack {
+  width: 150px;
+  text-align: center;
 }
 
-.gallery-item img {
-    width: 100%; /* Define a largura */
-    border-radius: 80px; /* Define o raio da borda */
-    margin-bottom: 5px; /* Define a margem inferior */
+.image-stack {
+  position: relative;
+  width: 100px;
+  height: 100px;
 }
+
+.image-stack img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #fff;
+}
+
+.image-stack img:nth-child(1) {
+  left: 0px;
+  z-index: 4;
+}
+
+.image-stack img:nth-child(2) {
+  left: 20px;
+  z-index: 3;
+}
+
+.image-stack img:nth-child(3) {
+  left: 40px;
+  z-index: 2;
+}
+
+.image-stack img:nth-child(4) {
+  left: 60px;
+  z-index: 1;
+}
+
+/* Aqui vão as suas regras de estilo normais (como você já tem no seu código) */
+
+
+
+/* Responsividade - Ajustes em telas menores */
+
+/* Tela pequena (exemplo: mobile) */
+@media screen and (max-width: 1300px) {
+
+  .title-bar h1 {
+    font-size: 50px;
+  }
+
+  .breadcrumb {
+    width: 100%;
+    
+    font-size: 12px;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+    border-right: none;
+  }
+
+  .profile-content {
+    margin-left: 80px;
+    padding-right: 80;
+  }
+
+  .profile-header img {
+    margin-left: 370px;
+  }
+
+  .profile-info p {
+
+    margin-left: 50px;
+
+  }
+
+  .profile-info span {
+
+    margin-left: 80px;
+
+  }
+
+  .contact-icons {
+
+   margin-left: 60px;
+
+  }
+ 
+  .profile-info {
+
+    margin-left: 300px;
+
+  }
+  .about-me {
+    margin-left: 10%;
+    margin-top: 20px;
+  }
+
+  .media-gallery {
+    margin-left: 10%;
+  }
+
+  .gallery-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .gallery-stack {
+    width: 100%;
+  }
+
+  .image-stack img {
+    width: 80px;
+    height: 80px;
+  }
+
+
+/* Tela muito pequena (exemplo: dispositivos móveis com tela pequena) */
+@media screen and (max-width: 480px) {
+
+  .title-bar h1 {
+    font-size: 30px;
+  }
+
+  .breadcrumb {
+    font-size: 10px;
+  }
+
+  .contact-icons {
+    font-size: 20px;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .profile-content {
+    margin-left: 0;
+    padding-right: 0;
+  }
+
+  .profile-header {
+    margin-left: 0;
+  }
+
+  .about-me {
+    margin-left: 5%;
+    margin-top: 10px;
+  }
+
+  .media-gallery {
+    margin-left: 5%;
+  }
+
+  .gallery-stack {
+    width: 80%;
+  }
+
+  .image-stack img {
+    width: 60px;
+    height: 60px;
+  }
