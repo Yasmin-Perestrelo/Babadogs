@@ -74,21 +74,20 @@
     
 
     <!-- conteudo principal-->
-<main class="main-content">  
-      <div class="serviçosPC container-fluid d-none d-md-flex"></div>
-        <img class="img-fluid" src="../img/Pata_azul.svg" />
-        <ul><h5>Meu Perfil</h5></ul>
+   <main>
+    <div class="main-content">  
+      <div class="serviçosPC container-fluid d-none d-md-flex" style="display: flex; align-items: center;">
+          <img class="img-fluid" src="../img/Pata_azul.svg" alt="Pata azul" />
+          <h5 style="margin-left: 10px;">Meu Perfil</h5>
+      </div>
+  </div>
         
-   
+  
     <!-- Barra de Título com Logo e Título "Meu Perfil" -->
    
-    
-      
-  
-
     <!-- Caminho de Navegação -->
     <div class="breadcrumb">
-      <a href="#">Início</a> > <span>Meu Perfil</span>
+      <a href="">Início</a> > <span>Meu Perfil</span>
     </div>
 
     <div class="content-wrapper">
@@ -111,7 +110,15 @@
           <div class="profile-info">
             <h2>Gabriela dos Santos</h2>
             <p>Professora de enfermagem</p>
-            <span>São Paulo</span>
+            <span>São Paulo-sp</span>
+            <div>
+              <div class="contact-icons">
+                <a href="link-do-chat" target="_blank"><i class="fas fa-comment-dots"></i></a> <!-- Ícone de chat -->
+                <a href="tel:+1234567890"><i class="fas fa-phone-alt"></i></a> <!-- Ícone de telefone -->
+                <a href="mailto:email@exemplo.com"><i class="fas fa-envelope"></i></a> <!-- Ícone de e-mail -->
+                <a href="link-do-CPF" target="_blank"><i class="fas fa-id-card"></i></a> <!-- Ícone de CPF -->
+            </div>            
+            </div>
           </div>
         </div>
 
@@ -127,29 +134,46 @@
 
         <div class="media-gallery">
           <h3>Mídia e galeria</h3>
-          <div class="gallery">
-            <div class="gallery-item">
-              <img src="" alt="Foto 1">
-              <p>Texto da foto 1</p>
+          <div class="gallery-row">
+            <div class="gallery-stack">
+                <div class="image-stack">
+                    <img src="/Babadogs-main/Babadogs/img/Doguinho.svg" alt="Imagem 1">
+                    <img src="/Babadogs-main/Babadogs/img/Doguinho2.svg" alt="Imagem 2">
+                    <img src="/Babadogs-main/Babadogs/img/Doguinho3.svg" alt="Imagem 3">
+                    <img src="/Babadogs-main/Babadogs/img/Doguinho4.svg" alt="Imagem 4">
+                </div>
+                <p>Todas as fotos</p>
+                <p>20 fotos</p>
             </div>
-            <div class="gallery-item">
-              <img src="foto2.jpg" alt="Foto 2">
-              <p>Texto da foto 2</p>
+            
+            <div class="gallery-stack">
+                <div class="image-stack">
+                    <img src="/Babadogs-main/Babadogs/img/Gatinho1.svg" alt="Imagem 5">
+                    <img src="/Babadogs-main/Babadogs/img/Doguinho.svg" alt="Imagem 6">
+                    <img src="/Babadogs-main/Babadogs/img/Doguinho2.svg" alt="Imagem 7">
+                    <img src="/Babadogs-main/Babadogs/img/Gatinho2.svg" alt="Imagem 8">
+                </div>
+                <p>Todas as fotos</p>
+                <p>15 fotos</p>
             </div>
-            <div class="gallery-item">
-              <img src="foto3.jpg" alt="Foto 3">
-              <p>Texto da foto 3</p>
+        
+            <div class="gallery-stack">
+                <div class="image-stack">
+                    <img src="/Babadogs-main/Babadogs/img/Gatinho3.svg" alt="Imagem 9">
+                    <img src="/Babadogs-main/Babadogs/img/Gatinho2.svg" alt="Imagem 10">
+                    <img src="/Babadogs-main/Babadogs/img/Doguinho3.svg" alt="Imagem 11">
+                    <img src="/Babadogs-main/Babadogs/img/Doguinho4.svg" alt="Imagem 12">
+                </div>
+                <p>Todas as fotos</p>
+                <p>30 fotos</p>
             </div>
-            <div class="gallery-item">
-              <img src="foto4.jpg" alt="Foto 4">
-              <p>Texto da foto 4</p>
-            </div>
+        </div>
+        
           </div>
         </div>
       </section>
     </div>
   </main>
-
     <footer class="text-center mt-4">
         <!-- Footer conteúdo -->
     </footer>
