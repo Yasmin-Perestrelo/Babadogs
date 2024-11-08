@@ -72,6 +72,12 @@ button:focus:focus {
   background-color: #F0F2FF;
 }
 
+.offcanvas-body {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 /*Escurecer o fundo*/
 .offcanvas-backdrop.show {
   background-color: rgba(0, 0, 0, 0.5);
@@ -151,7 +157,7 @@ button:focus:focus {
 }
 
 .logo {
-  width: 130px;
+  width: 5%;
 }
 
 .login {
