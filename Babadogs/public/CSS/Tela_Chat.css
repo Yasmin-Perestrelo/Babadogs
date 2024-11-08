@@ -1,3 +1,5 @@
+
+
 .seta {
     width: 20px;
     transform: rotate(180deg);
@@ -8,12 +10,36 @@
     align-items: center;
 }
 
-.dropdown-item{
+.dropdown-item2{
     margin-right: 20px;
     font-size: 0.9vw;
+    margin-left: 20px;
+    align-items: center;
+    text-decoration: none;
+    color: #373737;
 }
 
-.icone {
+.list-unstyled-2 li {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.list-unstyled-2 li svg path {
+  transition: 0.3s ease-in-out;
+}
+
+.list-unstyled-2 li:hover svg path {
+  fill: #5961B4;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.list-unstyled-2 li:hover a {
+  color: #5961B4;
+  transition: 0.3s ease-in-out;
+}
+
+.icone2 {
     flex-shrink: 0; /* Impede que eles encolham */
 }
 
@@ -30,7 +56,6 @@
   .fotoPerfil {
     width: 20%; 
     aspect-ratio: 1 / 1; 
-    border-radius: 50%; 
     object-fit: cover; 
     overflow: hidden; 
   }
