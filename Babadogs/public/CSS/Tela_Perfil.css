@@ -219,21 +219,22 @@ header {
 
 /* ------------ conteudo principal ------------ */
 
-.serviçosPC,
-.div-serviços-btnPC {
-    padding: 0% 5% 0% 5%; /* Define o preenchimento para os elementos com essas classes */
+.serviçosPC ul{
+
+margin-top: 20px;
+
 }
 
-.serviçosPC h1, .profissionalPC h1 {
-    font-size: 6%; /* Define o tamanho da fonte para os elementos <h1> nessas classes */
-    margin: 0.4% 0% 0% 1%; /* Define a margem */
+.serviçosPC img{
+
+margin-top: 5px;
+margin-bottom: -80px;
+margin-left: -10px;
+
 }
 
-.serviçosPC img, .profissionalPC img {
-    width: 10%; /* Define a largura das imagens nessas classes */
-    max-width: 10%; /* Define a largura máxima */
-    height: auto; /* Ajusta automaticamente a altura */
-}
+
+
 
 /* Barra de Título */
 .title-bar {  
@@ -362,7 +363,7 @@ margin-top: 25px;
 
 .about-me{
 
-margin-left: 25%;
+margin-left: 30%;
 margin-top: -300px;
 }
 
@@ -394,4 +395,71 @@ margin-left: 25%;
     width: 100%; /* Define a largura */
     border-radius: 80px; /* Define o raio da borda */
     margin-bottom: 5px; /* Define a margem inferior */
+}
+
+
+.serviçosPC,
+.div-serviços-btnPC {
+  padding: 0% 5% 0% 5%;
+  margin: 2% 0% 2% 0%;
+}
+
+.serviçosPC h1, .profissionalPC h1 {
+  font-size: 1.5vw;
+  margin: 0.4% 0% 0% 1%;
+}
+
+.serviçosPC img, .profissionalPC img {
+  width: 3%;
+  max-width: 10%;
+  height: auto;
+}
+
+
+
+ /*album de fotos*/
+
+ /* Container geral para organizar as galerias em linha */
+.photo-gallery-container {
+  display: flex;
+  gap: 20px; /* Espaço entre cada galeria */
+  justify-content: center; /* Centraliza as galerias horizontalmente */
+  align-items: center;
+}
+
+/* Cada item de galeria */
+.gallery-item {
+  text-align: center;
+}
+
+/* Container da galeria */
+.photo-gallery {
+  display: flex;
+  position: relative;
+}
+
+/* Estilo das fotos individuais */
+.photo {
+  position: relative;
+  margin-left: -20px; /* Ajusta o valor para controlar a sobreposição */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 70px; /* Define a largura da miniatura */
+  height: 70px; /* Define a altura da miniatura igual à largura para tornar a imagem quadrada */
+  border-radius: 0; /* Garantia de que as bordas fiquem quadradas */
+}
+
+/* Ajuste das imagens */
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cobre o espaço da miniatura mantendo a imagem centralizada */
+  border-radius: 0; /* Remove qualquer arredondamento residual nas bordas */
+}
+
+/* Texto de informações da galeria */
+.gallery-info {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
 }
