@@ -90,12 +90,11 @@
   </header>
 
   <!-- conteudo principal-->
-  <main class="main-content">
-    <div class="serviçosPC container-fluid d-none d-md-flex"></div>
-    <img class="img-fluid" src="../img/Pata_azul.svg" />
-    <ul>
-      <h5>Meu Perfil</h5>
-    </ul>
+    <main class="main-content";>
+    <div class="serviçosPC">
+      <img class="img-fluid" src="./img/Pata_azul.svg" />
+    <ul><h1>Meu Perfil</h1></ul>
+    </div>
 
 
     <!-- Barra de Título com Logo e Título "Meu Perfil" -->
@@ -120,13 +119,24 @@
         <button class="delete-account">Sair</button>
       </aside>
 
-      <section class="profile-content">
+      <section class="profile-content">   <!----../img/Gabriela.svg-->
         <div class="profile-header">
-          <img src="../img/Gabriela.svg" alt="Foto de Perfil" class="profile-perfil">
+          <img src="/Babadogs/public/img/Gabriela.svg" alt="Foto de Perfil" class="profile-perfil">
           <div class="profile-info">
             <h2>Gabriela dos Santos</h2>
             <p>Professora de enfermagem</p>
-            <span>São Paulo</span>
+            <span>São Paulo - SP</span>
+           <!-- Link para Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!-- Barra de ícones de contato -->
+<div class="icon-bar">
+    <a href="https://example.com/chat" target="_blank" title="Chat"><i class="fas fa-comments"></i></a>
+    <a href="tel:+5500000000000" title="Telefone"><i class="fas fa-phone"></i></a>
+    <a href="mailto:exemplo@dominio.com" title="E-mail"><i class="fas fa-envelope"></i></a>
+    <a href="https://example.com/cpf" target="_blank" title="CPF"><i class="fas fa-id-card"></i></a>
+</div>
+
           </div>
         </div>
 
@@ -143,27 +153,43 @@
           </h6>
         </div>
 
-        <div class="media-gallery">
-          <h3>Mídia e galeria</h3>
-          <div class="gallery">
-            <div class="gallery-item">
-              <img src="" alt="Foto 1">
-              <p>Texto da foto 1</p>
-            </div>
-            <div class="gallery-item">
-              <img src="foto2.jpg" alt="Foto 2">
-              <p>Texto da foto 2</p>
-            </div>
-            <div class="gallery-item">
-              <img src="foto3.jpg" alt="Foto 3">
-              <p>Texto da foto 3</p>
-            </div>
-            <div class="gallery-item">
-              <img src="foto4.jpg" alt="Foto 4">
-              <p>Texto da foto 4</p>
-            </div>
+        <div class="photo-gallery-container">
+          <!-- Galeria 1 -->
+          <div class="gallery-item">
+              <div class="photo-gallery">
+                  <div class="photo"><img src="/Babadogs/public/img/Doguinho3.svg" alt="Foto 1"></div>
+                  <div class="photo"><img src="/Babadogs/public/img/Coelhinho2.svg" alt="Foto 2"></div>
+                  <div class="photo"><img src="/Babadogs/public/img/Doguinho1.svg" alt="Foto 3"></div>
+                  <div class="photo"><img src="/Babadogs/public/img/coelhinho.svg" alt="Foto 4"></div>
+              </div>
+              <p class="gallery-info">Todas as fotos<br>20 fotos</p>
           </div>
-        </div>
+          
+          <!-- Galeria 2 -->
+          <div class="gallery-item">
+              <div class="photo-gallery">
+                  <div class="photo"><img src="/Babadogs/public/img/Doguinho1.svg" alt="Foto 5"></div>
+                  <div class="photo"><img src="/Babadogs/public/img/Doguinho2.svg" alt="Foto 6"></div>
+                  <div class="photo"><img src="/Babadogs/public/img/coelhinho.svg" alt="Foto 7"></div>
+                  <div class="photo"><img src="/Babadogs/public/img/cachorrinho1.svg" alt="Foto 8"></div>
+              </div>
+              <p class="gallery-info">Todas as fotos<br>15 fotos</p>
+          </div>
+          
+          <!-- Galeria 3 -->
+          <div class="gallery-item">
+              <div class="photo-gallery">
+                  <div class="photo"><img src="/Babadogs/public/img/cachorrinho1.svg" alt="Foto 9"></div>
+                  <div class="photo"><img src="/Babadogs/public/img/Cachorrinho3.svg" alt="Foto 10"></div>
+                  <div class="photo"><img src="/Babadogs/public/img/Doguinho1.svg" alt="Foto 11"></div>
+                  <div class="photo"><img src="/Babadogs/public/img/Coelhinho2.svg" alt="Foto 12"></div>
+              </div>
+              <p class="gallery-info">Todas as fotos<br>30 fotos</p>
+          </div>
+      </div>
+      
+      
+      
       </section>
     </div>
   </main>
